@@ -30,10 +30,6 @@ jobs:
       run: |
         mkdir working
 
-    - name: List all files
-      run: |
-        ls -la
-
     - name: Reinstall device-mapper package
       run: |
         pacman -S --noconfirm device-mapper
