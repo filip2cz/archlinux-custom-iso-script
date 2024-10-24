@@ -18,6 +18,10 @@ jobs:
       run: |
         pacman -Sy --noconfirm
 
+    - name: Install grub
+      run: |
+        pacman -S --noconfirm grub
+
     - name: Install archiso
       run: |
         pacman -S --noconfirm archiso
